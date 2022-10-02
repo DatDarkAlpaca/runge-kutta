@@ -18,7 +18,7 @@ namespace rk
 		return point2d(init.first + h, init.second + k);
 	}
 
-	inline void multiStepRK4(const function& func, point2d init, double h, int steps)
+	inline void multiStepRK4(const function& func, point2d init, double h, size_t steps)
 	{
 		size_t index = 0;
 		while (steps--)

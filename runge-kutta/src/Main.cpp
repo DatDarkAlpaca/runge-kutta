@@ -1,19 +1,14 @@
-#include "view/Application.h"
-#include "view/MainScreen.h"
-#include "view/RK4Screen.h"
+#include "view/View.h"
 
-namespace
+static void exitCommand()
 {
-	inline void exitCommand()
-	{
-		exit(0);
-	}
-
-	inline std::unordered_map<std::string_view, std::function<void()>> defaultFunctionMap = {
-		{ "cls", rk::CLEAR_SCREEN },
-		{ "quit", exitCommand }
-	};
+	exit(0);
 }
+
+static std::unordered_map<std::string_view, std::function<void()>> defaultFunctionMap = {
+	{ "cls", rk::CLEAR_SCREEN },
+	{ "quit", exitCommand }
+};
 
 int main()
 {	

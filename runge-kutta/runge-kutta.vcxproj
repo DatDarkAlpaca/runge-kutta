@@ -155,6 +155,9 @@
     <ClCompile Include="src\lexer\Lexer.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\parser\Parser.cpp" />
+    <ClCompile Include="src\view\application\Application.cpp" />
+    <ClCompile Include="src\view\main_screen\MainScreen.cpp" />
+    <ClCompile Include="src\view\rk4_screen\RK4Screen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
@@ -168,10 +171,11 @@
     <ClInclude Include="src\common\Point.h" />
     <ClInclude Include="src\runge\RungeKutta.h" />
     <ClInclude Include="src\common\Token.h" />
-    <ClInclude Include="src\view\Application.h" />
-    <ClInclude Include="src\view\MainScreen.h" />
-    <ClInclude Include="src\view\RK4Screen.h" />
+    <ClInclude Include="src\view\application\Application.h" />
+    <ClInclude Include="src\view\main_screen\MainScreen.h" />
+    <ClInclude Include="src\view\rk4_screen\RK4Screen.h" />
     <ClInclude Include="src\view\Screen.h" />
+    <ClInclude Include="src\view\View.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

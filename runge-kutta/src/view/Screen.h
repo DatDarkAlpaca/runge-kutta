@@ -1,6 +1,7 @@
 #pragma once
 #include <unordered_map>
 #include <functional>
+#include <iostream>
 
 #include "common/Utils.h"
 
@@ -17,7 +18,18 @@ namespace rk
 		virtual ~Screen() = default;
 
 	public:
-		virtual void execute() { }
+		virtual void execute() 
+		{
+			std::cout << "> ";
+
+			std::string input;
+			std::getline(std::cin, input);
+
+			if (findCommand(input))
+				functions[rk::toLower(input)]();
+			else
+				std::cout << "[Error]: Invalid command. Type 'help' to check a list of commands.\n\n";
+		}
 
 		virtual void mainHeader() { }
 

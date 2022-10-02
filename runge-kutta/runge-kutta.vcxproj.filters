@@ -27,6 +27,15 @@
     <ClCompile Include="src\interpreter\Interpreter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\view\application\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\main_screen\MainScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\view\rk4_screen\RK4Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
@@ -59,13 +68,16 @@
     <ClInclude Include="src\view\Screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\view\Application.h">
+    <ClInclude Include="src\view\application\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\view\MainScreen.h">
+    <ClInclude Include="src\view\main_screen\MainScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\view\RK4Screen.h">
+    <ClInclude Include="src\view\rk4_screen\RK4Screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\view\View.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

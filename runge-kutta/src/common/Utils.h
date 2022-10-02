@@ -4,7 +4,7 @@
 
 namespace rk
 {
-	void CLEAR_SCREEN()
+	inline void CLEAR_SCREEN()
 	{
 #ifdef _WIN32
 		system("cls");
@@ -13,7 +13,7 @@ namespace rk
 #endif
 	}
 
-	std::string toLower(const std::string data)
+	inline std::string toLower(const std::string data)
 	{
 		std::string copy = data;
 		std::transform(copy.begin(), copy.end(), copy.begin(), std::tolower);
