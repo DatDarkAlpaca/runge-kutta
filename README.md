@@ -16,7 +16,7 @@ Como especificado, essa atividade foi realizada individualmente. Entretanto, par
 Esse projeto **não** conta com um sistema de geração de projetos, tendo em vista seu escopo limitado. Para contribuir, você precisará instalar o Visual Studio, ou criar seu próprio sistema de geração de projetos.
 
  * [Visual Studio Community](https://visualstudio.microsoft.com/pt-br/vs/community/)
- * (Opcional)[Git](https://git-scm.com/downloads)
+ * (Opcional) [Git](https://git-scm.com/downloads)
 
 ## Download
 A fim de acessar os arquivos do projeto, primeiro você deve baixá-los. A opção mais adequada é cloná-lo utilizando o git. Entretanto, você também pode baixar o projeto clicando [aqui](https://github.com/leomartins98/Sexshop-System/archive/refs/heads/main.zip). Para clonar o repositório em sua máquina, utilize o seguinte comando:
