@@ -3,7 +3,7 @@
 
 #include "interpreter/Interpreter.h"
 #include "parser/Parser.h"
-#include "Point.h"
+#include "common/Point.h"
 
 namespace rk
 {

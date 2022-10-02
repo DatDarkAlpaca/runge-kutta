@@ -1,6 +1,6 @@
 #pragma once
 #include "parser/Parser.h"
-#include "Point.h"
+#include "common/Point.h"
 
 namespace rk
 {

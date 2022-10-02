@@ -1,7 +1,7 @@
 #pragma once
 #include <deque>
 #include <vector>
-#include "Token.h"
+#include "common/Token.h"
 
 namespace rk
 {
