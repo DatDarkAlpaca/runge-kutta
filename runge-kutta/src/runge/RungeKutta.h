@@ -1,8 +1,9 @@
 #pragma once
-#include "Point.h"
+#include <iostream>
 
-#include "parser/Parser.h"
 #include "interpreter/Interpreter.h"
+#include "parser/Parser.h"
+#include "Point.h"
 
 namespace rk
 {
@@ -15,5 +16,17 @@ namespace rk
 		double k = (k1 + 2 * k2 + 2 * k3 + k4) / 6;
 
 		return point2d(init.first + h, init.second + k);
+	}
+
+	inline void multiStepRK4(const function& func, point2d init, double h, int steps)
+	{
+		size_t index = 0;
+		while (steps--)
+		{
+			auto result = rungeKuttaRK4(func, init, h);
+			std::cout << index << ": " << "(" << result.first << ", " << result.second << ")\n";
+			init = result;
+			++index;
+		}
 	}
 }

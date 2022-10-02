@@ -160,6 +160,7 @@
     <None Include="..\.gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\common\Utils.h" />
     <ClInclude Include="src\debug\Debug.h" />
     <ClInclude Include="src\interpreter\Interpreter.h" />
     <ClInclude Include="src\lexer\Lexer.h" />

@@ -53,5 +53,8 @@
     <ClInclude Include="src\debug\Debug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\common\Utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

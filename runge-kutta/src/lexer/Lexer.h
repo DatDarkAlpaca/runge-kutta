@@ -1,8 +1,9 @@
 #pragma once
 #include <vector>
+#include <optional>
 #include "Token.h"
 
 namespace rk
 {
-	std::vector<Token> lex(const std::string& input);
+	std::optional<std::vector<Token>> lex(const std::string& input);
 }

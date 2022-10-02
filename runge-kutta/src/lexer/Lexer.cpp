@@ -1,3 +1,4 @@
+#include <optional>
 #include "Lexer.h"
 
 namespace
@@ -18,7 +19,7 @@ namespace
 	}
 }
 
-std::vector<rk::Token> rk::lex(const std::string& input)
+std::optional<std::vector<rk::Token>> rk::lex(const std::string& input)
 {
 	const char* current = input.c_str();
 
@@ -108,7 +109,7 @@ std::vector<rk::Token> rk::lex(const std::string& input)
 		}
 
 		else
-			throw "Invalid operator";
+			return std::nullopt;
 	}
 
 	return results;
