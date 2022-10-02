@@ -1,0 +1,9 @@
+# Visual Studio:
+.vs
+*.user
+
+# Binaries:
+[Xx]64
+[Xx]32
+[Bb]in
+[Ii]ntermediate
