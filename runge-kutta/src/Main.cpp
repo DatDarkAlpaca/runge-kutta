@@ -163,7 +163,7 @@ void displayRK4()
 	std::cout << "\t* The amount of steps (n).\n\n";
 
 	std::cout << "[!] Type 'back' to return to the main screen, and 'help' to see the available operators.\n";
-	std::cout << "[!] To begin, type 'compute'\n\n";
+	std::cout << "[!] To begin, type 'calc'\n\n";
 
 	while (true)
 	{
@@ -172,7 +172,7 @@ void displayRK4()
 		std::string input;
 		std::getline(std::cin, input);
 
-		if (rk::toLower(input) == "compute")
+		if (rk::toLower(input) == "calc")
 		{
 			computeRK4();
 			rk::CLEAR_SCREEN();
@@ -185,9 +185,22 @@ void displayRK4()
 			mainHeader();
 			return;
 		}
+		else if (rk::toLower(input) == "cls")
+		{
+			rk::CLEAR_SCREEN();
+			displayRK4();
+		}
 		else if (rk::toLower(input) == "help")
 		{
+			std::cout << '\n';
 
+			std::cout << "-= Available Commands =-\n";
+			std::cout << "* help\t" << ": Shows this list of commands\n";
+			std::cout << "* calc\t" << ": Performs a RK4 calculation\n";
+			std::cout << "* back\t" << ": Switches back to the main menu screen\n";
+			std::cout << "* cls\t" << ": Clears the console screen\n";
+
+			std::cout << '\n';
 		}
 		else
 			std::cout << "[Error]: Invalid command. Type 'help' to check a list of commands.\n\n";
