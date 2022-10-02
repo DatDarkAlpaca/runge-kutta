@@ -49,6 +49,17 @@ void rk::RKScreen::backCommand()
 void rk::RKScreen::helpCommand()
 {
 	std::cout << '\n';
+	
+	std::cout << "-= Available Operators =-\n";
+	std::cout << "\t* Floating point numbers. eg. 2.0\n";
+	std::cout << "\t* Addition '+'\n";
+	std::cout << "\t* Subtraction '-'\n";
+	std::cout << "\t* Multiplication '*'\n";
+	std::cout << "\t* Division '/'\n";
+	std::cout << "\t* Exponentiation '^'\n";
+	std::cout << "\t* Parenthesis\n";
+
+	std::cout << '\n';
 
 	std::cout << "-= Available Commands =-\n";
 	std::cout << "* help\t" << ": Shows this list of commands\n";
