@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 
 #include "interpreter/Interpreter.h"
 #include "parser/Parser.h"
@@ -24,7 +25,9 @@ namespace rk
 		while (steps--)
 		{
 			auto result = rungeKuttaRK4(func, init, h);
-			std::cout << index << ": " << "(" << result.first << ", " << result.second << ")\n";
+
+			printf("%d: (%8f, %8f)\n", (int)index, result.first, result.second);
+
 			init = result;
 			++index;
 		}

@@ -177,7 +177,7 @@ void rk::RKScreen::calcCommand()
 	std::cout << "\n-=-= Results Table =-=-\n";
 	rk::multiStepRK4(function, initial, h, n);
 
-	std::cout << "\nPress any key to return...";
+	std::cout << "\nPress Enter to return...";
 	std::cin.get();
 
 	clsCommand();
