@@ -104,7 +104,7 @@ std::optional<std::vector<rk::Token>> rk::lex(const std::string& input)
 
 		else if (std::tolower(*current) == 'y')
 		{
-			results.push_back({ TokenType::X, "y" });
+			results.push_back({ TokenType::Y, "y" });
 			++current;
 		}
 

@@ -22,13 +22,14 @@ namespace rk
 	inline void multiStepRK4(const function& func, point2d init, double h, size_t steps)
 	{
 		size_t index = 0;
+		auto point = init;
 		while (steps--)
 		{
-			auto result = rungeKuttaRK4(func, init, h);
+			auto result = rungeKuttaRK4(func, point, h);
 
 			printf("%d: (%8f, %8f)\n", (int)index, result.first, result.second);
 
-			init = result;
+			point = result;
 			++index;
 		}
 	}
